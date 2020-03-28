@@ -22,22 +22,28 @@ class App extends Component {
     return (
       <Fragment>
         <div className="center-align">
-          <h1>Markdown Previewer</h1>
+          <h1 id="header" className="header">
+            Markdown Previewer
+          </h1>
           <h3>
             Designed by William Davis of{" "}
             <a
-              href="https://dayvista.work"
+              href="https://dayvista.dev"
               target="_blank"
               rel="noopener noreferrer"
             >
-              dayvista.work
+              dayvista.dev
             </a>
           </h3>
         </div>
         <div className="container">
-          <div id="titles" className="row">
-            <h2 id="input">Input</h2>
-            <h2 id="output">Output</h2>
+          <div id="titles" className="row titles">
+            <h2 id="input" className="input">
+              Input
+            </h2>
+            <h2 id="output" className="output">
+              Output
+            </h2>
           </div>
           <div className="row">
             <textarea
@@ -49,7 +55,7 @@ class App extends Component {
             ></textarea>
             <div
               id="preview"
-              className="col s6"
+              className="col s6 preview"
               dangerouslySetInnerHTML={{ __html: marked(md) }}
             ></div>
           </div>

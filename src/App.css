@@ -15,21 +15,22 @@ textarea {
 }
 
 textarea,
-#preview {
+.preview {
   background-color: #ffffff;
 }
 
-h1,
-h2 {
+.header,
+.input,
+.output {
   text-decoration: underline;
 }
 
-#titles {
+.titles {
   display: flex;
   flex-direction: row;
 }
 
-#preview {
+.preview {
   border: 1px dotted #999;
 }
 
@@ -51,11 +52,11 @@ h2 {
     font-size: 4vw;
   }
 
-  #input {
+  .input {
     margin-left: 16.66%;
   }
 
-  #output {
+  .output {
     margin-left: 33.33%;
   }
 }
@@ -78,11 +79,11 @@ h2 {
     font-size: 3vw;
   }
 
-  #input {
+  .input {
     margin-left: 20%;
   }
 
-  #output {
+  .output {
     margin-left: 35%;
   }
 }
@@ -105,11 +106,11 @@ h2 {
     font-size: 1.5vw;
   }
 
-  #input {
+  .input {
     margin-left: 21%;
   }
 
-  #output {
+  .output {
     margin-left: 42%;
   }
 }
